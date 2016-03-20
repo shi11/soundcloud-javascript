@@ -22,6 +22,7 @@ module.exports = {
       return `${key}=${options[key]}`;
     }).join(', ');
 
-    return window.open(url, options.name, stringOptions);
+    //return window.open(url, options.name, stringOptions);
+    return window.open(url, '_blank', stringOptions);
   }
 };

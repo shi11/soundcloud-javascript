@@ -43,10 +43,15 @@ class Dialog {
     const url = createURL(this.options);
     this.popup = popup.open(url, this.width, this.height);
     dialogStore.set(this.id, this);
-    return this.deferred.promise;
+    return this.popup;
+    //return this.deferred.promise;
   }
 
+
+
   /**
+   * IS THIS DEPRECATED? See callback.js
+   *
    * Resolves or rejects the dialog's promise based on the provided response.
    * (Is initiated from the callback module)
    * @param  {Object} options The callback's response

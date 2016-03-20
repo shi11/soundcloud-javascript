@@ -36,5 +36,6 @@ module.exports = function (options = {}) {
   // set up and open the dialog
   // set access token when user is done
   let dialog = new Dialog(dialogOptions);
-  return dialog.open().then(setOauthToken);
+  //return dialog.open().then(setOauthToken);
+  return dialog.open();
 };
